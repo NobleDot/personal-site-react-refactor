@@ -14,7 +14,7 @@ const MainComponent = () => {
             <NavBar />
 
             {/* Main content of the page. */}
-            <div class="home-content">
+            <div className="home-content">
                 <HomeMessage/>
                 <Links />
             </div>

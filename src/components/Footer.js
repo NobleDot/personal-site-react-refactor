@@ -4,7 +4,7 @@ const Footer = () => {
     return (
         <footer>
             <a href="https://github.com/NobleDot">
-                <img class="nav-item" id="gh-icon" src={githubLogo}></img>
+                <img className="nav-item" id="gh-icon" src={githubLogo}></img>
             </a>
         </footer>
     )
