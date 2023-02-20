@@ -1,0 +1,60 @@
+.home-content{
+    display: flex;
+    flex-direction: column;
+    
+    max-width: 50%;
+    justify-content: center;
+
+    align-content: center;
+}
+
+.home-message{
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+
+    padding-top: 1rem;
+}
+
+.home-line{
+    display: flex;
+    flex-direction: row;
+
+    max-width: 100%;
+    margin: 0.5rem;
+}
+
+/*- Editing those links I shared on my page */
+.link-section{
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: flex-start;
+
+    max-width: 100%;
+    padding-top: 1%;
+    padding-left: 1%;
+    padding-bottom: 1%;
+}
+
+.link-item{
+    display: flex;
+    width: 100%;
+    height: auto;
+    align-content: space-evenly;
+
+    text-decoration: none;
+    color: aquamarine;
+    font-family: 'Merriweather', serif;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 1.6103399rem;
+
+    margin: 2px;
+    padding: 1rem;
+
+    border: 2px solid aquamarine;
+    /* box-shadow: rgb(0, 255, 47) 1px 0 20px; */
+    box-shadow: rgb(0, 174, 255) 1px 0 20px;
+}
+

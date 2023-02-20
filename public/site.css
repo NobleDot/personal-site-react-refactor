@@ -1,0 +1,112 @@
+
+/* Generalize website body appearance */
+body {
+    background: #000812;
+    color: aquamarine;
+
+    /* Can I add some neon-esque effect to text? */
+    /* text-shadow: rgb(0, 255, 47) 1px 0 20px; */
+    text-shadow: rgb(0, 174, 255) 1px 0 20px;
+    font-family: Georgia, sans-serif;
+
+    
+}
+
+/* Nav bar editing */
+.nav-bar{
+    position: fix;
+    top: 0;
+
+    display:flex;
+    width: auto;
+    height: 0 auto;
+
+    border: 1px solid aquamarine;
+    /* box-shadow: rgb(0, 255, 47) 1px 0 20px; */
+    box-shadow: rgb(0, 174, 255) 1px 0 20px;
+
+    flex-direction: row;
+
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 0;
+    align-content: space-evenly;
+}
+
+.nav-item{
+    display: flex;
+    width: auto;
+    height: auto;
+    align-content: space-evenly;
+
+    /* Editing font and text appearance */
+    text-decoration: none;
+    color: aquamarine;
+    font-family: 'Merriweather', serif;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 1.6103399rem;
+
+    margin: 0;
+    padding: 0.5rem;
+}
+
+#current-page{
+    border-bottom-width: 8px;
+    border-bottom: 4px solid rgb(255, 86, 86);
+}
+
+/* Cool hover transition effect I learned from:
+    https://codepen.io/palimadra/pen/DOGxPj
+*/
+@media (-webkit-min-device-pixel-ratio:0) {
+    a {
+        /* background-color:rgb(255, 86, 86);
+        background-image: -webkit-linear-gradient(left, rgb(255, 86, 86), transparent 50%); */
+
+        background-color:rgb(255, 0, 0);
+        background-image: -webkit-linear-gradient(left, rgb(255, 57, 245), transparent 10%);
+        
+        background-position: 100% 0;
+        background-size: 200% 200%;
+        color: transparent;
+        transition: left;
+        -webkit-transition: 0s 0s;
+        background-clip: inherit;
+        -webkit-background-clip: text;
+    }
+    a:hover {
+        background-position: 0 0;
+        color: transparent;
+        text-shadow: red 1px 0 10px;
+        transition: .4s 0;
+    }
+}
+
+/* Footer bar editing */
+footer{
+    position: flex-end;
+    bottom: 0;
+    left: 0;
+
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    height: 0 auto;
+
+    border: 1px solid aquamarine;
+    /* box-shadow: rgb(0, 255, 47) 1px 0 20px; */
+    box-shadow: rgb(0, 174, 255) 1px 0 20px;
+
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: auto;
+}
+
+#gh-icon{
+
+    display: flex;
+    padding: 0.5rem;
+    max-width: 30px;
+    max-height: 30px;
+}
