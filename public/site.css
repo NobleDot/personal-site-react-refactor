@@ -4,8 +4,7 @@ body {
     background: #000812;
     color: aquamarine;
 
-    /* Can I add some neon-esque effect to text? */
-    /* text-shadow: rgb(0, 255, 47) 1px 0 20px; */
+    /* Neon-esque effect. */
     text-shadow: rgb(0, 174, 255) 1px 0 20px;
     font-family: Georgia, sans-serif;
 
@@ -22,7 +21,6 @@ body {
     height: 0 auto;
 
     border: 1px solid aquamarine;
-    /* box-shadow: rgb(0, 255, 47) 1px 0 20px; */
     box-shadow: rgb(0, 174, 255) 1px 0 20px;
 
     flex-direction: row;
@@ -49,6 +47,24 @@ body {
 
     margin: 0;
     padding: 0.5rem;
+}
+
+.about-me{
+    display: flex;
+    flex-direction: column-wrap;
+}
+.about-me-section {
+    display: flex;
+    flex-direction: row nowrap;
+    flex-flow: row nowrap;
+
+    align-content: flex-start;
+}
+.total-container{
+    display: flex;
+    flex-direction: column;
+
+    min-height: 92vh;
 }
 
 #current-page{
@@ -85,9 +101,7 @@ body {
 
 /* Footer bar editing */
 footer{
-    position: flex-end;
-    bottom: 0;
-    left: 0;
+    margin-top: auto;
 
     display: flex;
     flex-direction: row;
@@ -100,7 +114,7 @@ footer{
 
     justify-content: center;
     align-items: flex-end;
-    margin-top: auto;
+    
 }
 
 #gh-icon{
@@ -109,4 +123,16 @@ footer{
     padding: 0.5rem;
     max-width: 30px;
     max-height: 30px;
+}
+#chicago {
+    max-width: 35%;
+    max-height: 35%;
+    align-content: flex-start;
+    object-fit: contain;
+    margin-bottom: auto;
+
+    padding-top: 24px;
+    padding-bottom: 24px;
+    padding-left: 30px;
+    padding-right: 0px;
 }
